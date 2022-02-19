@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="How Does it work.html">
+            <ul class="title">
+                <li>
+                    <img src="../Resource/Images/LOGO/icons8-blood-85.png" alt="funding Logo">
+                </li>
+                <li>
+                    <h1>E-fund</h1>
+                </li>
+            </ul>
+        </a>
+        <a href="#" class="toggle">
+            <span class="link"></span>
+            <span class="link"></span>
+            <span class="link"></span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="category.html" target="_blank">Category</a></li>
+                <li><a href="How Does it work.html" target="_blank">How Does it work</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="Contact.html" target="_blank">Contact us</a></li>
+                <li>
+                    <a href="Login.html"> login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="empty">
+
+    </div>
+
+    <section class="login">
+        <form class="f-container" >
+            <div class="logintitle">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="name">
+                <label for="FullName">FullName:</label>
+                <input type="text" id="name" class="loginbox" placeholder="FullName">
+                <div class="error"></div>
+            </div>
+            <div class="name">
+                <label for="username">Email</label> <br> <br>
+                <input class="loginbox" id="email" type="text" placeholder="Username" autofocus>
+                <div class="error"></div>
+            </div>
+            <button>Submit</button>
+        </form>
+        <p class="logintext">Don't have an account? <a href="Register.html">Register</a> </p>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-1">
+                    <h3>E-fund</h3>
+                    <p>
+                        E-fund is a way of raising money to finance project and businesses, It enables fundraisers to collect money from a large number of people via online plaforms
+                    </p>
+                </div>
+                <div class="col col-2">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="terms and policy.html">Terms and rules</a></li>
+                        <li><a href="Privacy policy.html">Privacy policy</a></li>
+                        <li>
+                            <label>Contact Us</label><br>
+                            <img src="../Resource/Images/LOGO/icons8-telephone-48.png" alt="contact phone number" width="20">
+                            <p style="margin: 0;"><a href="#">(+251)9-00-11-11-11</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-3">
+                    <h3>Leave a comment</h3>
+                    <label for="Email">Emial</label>
+                    <input type="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"><br><br>
+                    <label for="Comment">Comment</label><br>
+                    <textarea name="Comment" id="Comment" cols="30" rows="5"></textarea>
+                </div>
+                <div class="col col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li class="social-links">
+                            <a href="#"><img src="../Resource/Images/LOGO/icons8-facebook-48.png" alt="FaceBook logo"></a>
+                        </li>
+                        <li class="social-links">
+                            <a href="#"><img src="../Resource/Images/LOGO/icons8-instagram-48.png" alt="instagram logo"></a>
+                        </li>
+                        <li class="social-links">
+                            <a href="#"><img src="../Resource/Images/LOGO/icons8-twitter-48.png" alt="Twitter logo"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row-2">
+                <p>2022 E-fund &copy; CopyRight</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../Js/RigsterLogin.js"></script>
+</body>
+
+</html>
