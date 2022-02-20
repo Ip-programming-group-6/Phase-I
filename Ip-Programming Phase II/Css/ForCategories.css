@@ -79,6 +79,7 @@ body,html {
     display: none;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 .toggle .link {
@@ -274,29 +275,32 @@ progress{
     .paragraph {
         display: none;
     }
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 60px;
+    z-index: 2;
+    font-size: 0.8em;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.story-container{
+    display: block;
+}
+.container a{
+    margin: 10px 0px;
+}
 }
 @media(max-width:1050px){
     #header{
         z-index: 1;
         font-size: 0.9em;
     }
-    .container{
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-auto-rows: 400px;
-        grid-gap: 40px;
-        z-index: 2;
-        font-size: 0.8em;
-    }
 }
 @media(max-width:720px){
     #header{
         font-size: 0.7em;
-    }
-    .container{
-        position: relative;
-        grid-template-columns: repeat(2,1fr);
-        grid-auto-rows: 300px;
     }
 }

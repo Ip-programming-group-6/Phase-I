@@ -1,15 +1,3 @@
-
-* {
-    box-sizing: border-box;
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
 #header {
     display: flex;
     justify-content: space-between;
@@ -35,7 +23,6 @@ html {
     color: #333;
     font-size: 2.3em;
 }
-
 .fundraiser h2 {
     background-color: white;
     width: 35%;
@@ -49,10 +36,9 @@ html {
     color: #333;
     text-decoration: none;
 }
-
-.fundraiser h2:hover {
+.fundraiser h2:hover{
     background-color: rgb(146, 130, 130);
-    opacity: 1;
+    opacity:1;
     color: #ffffff;
 }
 
@@ -141,6 +127,22 @@ img {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
+
+
+
+
+
+.button {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
 .toggle {
     position: absolute;
     top: 1.5em;
@@ -159,109 +161,161 @@ img {
     border-radius: 10px;
     height: 4px;
 }
-.set-container{
-    width: 50%;
-    padding: 30px;
-    background: linear-gradient(to right ,rgb(78, 131, 95),rgb(150, 252, 150));
-    box-shadow: 0px 0px 10px 2px rgb(199, 247, 214);
-    border-radius: 5px;
-    margin: 100px 0;
-    margin-left: 120px;
-    
 
+
+
+
+
+#share {
+    max-width: 100%;
+    margin: 0;
 }
-.set-container *{
-    color: rgb(242, 255, 194);
+
+label,
+
+a {
+    color: white;
 }
-h2{
-    font-weight: lighter;
-    text-align: center;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
-label,input {
-    margin-top: 10px;
-    font-size: 1.4em;
+
+html {
+  box-sizing: border-box;
 }
-.back{
-    border-radius: 50%;
-    padding: 15px;
-    border: none;
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
-.back a{
-    color: black;
-    text-decoration: none;
-    border:none;
-    padding: 0;
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
-.Next{
-    width:80%;
-    margin-left: 30px;
-    border: none;
-    border-radius: 5px;
-    background:linear-gradient(to right ,rgb(78, 131, 95) 30%,rgb(196, 252, 196) 70%);
-    padding: 5px;
-    font-size: 1.3em;
-    color: rgb(242, 255, 194);
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
 }
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
 .footer {
     clear: left;
-    background-color:#24262b;
+    background-color: #24262b;
     margin: 0;
-    margin-top: 60px;
+    margin-top: 10px;
 }
-.row{
+
+.row {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     width: 90%;
     margin-left: 40px;
 }
-.fotter-container{
+
+.fotter-container {
     max-width: 100%;
-    padding: 5px;
-    color: white;
+    padding: 10px;
 }
-.footer *{
-    color:white ;
-}
-.col{
+
+.col {
     width: 25%;
-    padding:0px 10px;
+    padding: 0px 10px;
 }
-.col-1{
+
+.col-1 {
     width: 15%;
+	color: white;
 }
-.row-2{
+
+.row-2 {
     text-align: center;
     width: 100%;
+	color: white;
 }
+
 .col-2 {
     margin: 0px;
     padding: 0;
 }
-.col-4{
+
+.col-4 {
     text-align: center;
 }
-.col h3 ,footer a{
+
+.col h3 {
     color: white;
 }
-.social-links img{
+
+.social-links img {
     width: 40px;
 }
 
-.social-links a{
+.social-links a {
     background-color: rgba(255, 255, 255, 0.2);
     width: 50px;
     height: 50px;
     margin: 0 10px 10px 0;
     border-radius: 50%;
-    text-align:  center;
+    text-align: center;
     color: #ffffff;
 }
-.social-links a:hover{
+
+.social-links a:hover {
     background-color: #ffffff;
 }
-.footer .col:not(:last-child) a:hover{
-    padding-left:10px;
+
+.footer .col:not(:last-child) a:hover {
+    padding-left: 10px;
 }
+
 @media (max-width:720px),
 (max-width:1050px) {
     .col {
@@ -326,28 +380,154 @@ label,input {
     }
 }
 
-@media(max-width:1050px){
-    #header{
-        z-index: 1;
-        font-size: 0.9em;
-    }
-    .container{
+@media(max-width:1050px) {
+    .container {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 400px;
         grid-gap: 40px;
         z-index: 2;
         font-size: 0.8em;
     }
-}
-@media(max-width:720px){
-    #header{
-        font-size: 0.7em;
+
+    .gallery-item {
+        border: none;
+        box-shadow: 1px 2px 3px black;
+        border-radius: 4px;
+        padding-bottom: 3px;
     }
-    .container{
+
+    .quote {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 40%;
+    }
+
+    .quote blockquote {
+        width: 90%;
+        font-size: 17px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .quote .quote-3,
+    .quote-2,
+    .quote-4 {
+        height: 110px;
+    }
+
+    .quote .quote-3 {
         position: relative;
-        grid-template-columns: repeat(2,1fr);
+        bottom: 43%;
+    }
+
+    .quote .quote-4 {
+        position: relative;
+        bottom: 86%;
+    }
+
+    .text .paragraph {
+        display: flex;
+        width: 100%;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .button .D-S {
+        padding: 5px;
+        margin: 0;
+        margin-left: 20px;
+        width: 30%;
+    }
+
+    .button .donate {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+    }
+
+    .button .share {
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+    .button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media(max-width:720px) {
+
+    .container {
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 300px;
+    }
+
+    .gallery-item {
+        border: none;
+        box-shadow: 1px 2px 3px black;
+        border-radius: 4px;
+        padding-bottom: 3px;
+    }
+
+    .button .D-S {
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+        width: 30%;
+    }
+
+    .button .donate {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+    }
+
+    .button .share {
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+    .button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .quote {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 40%;
+    }
+
+    .quote blockquote {
+        width: 80%;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .quote .quote-3,
+    .quote-2,
+    .quote-4 {
+        height: 110px;
+    }
+
+    .quote .quote-3 {
+        position: relative;
+        bottom: 43%;
+    }
+
+    .quote .quote-4 {
+        position: relative;
+        bottom: 86%;
+    }
+
+    .footer {
+        font-size: 0.75em;
     }
 }

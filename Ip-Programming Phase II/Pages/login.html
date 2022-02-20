@@ -11,7 +11,7 @@
 
 <body>
     <header id="header">
-        <a href="How Does it work.html">
+        <a href="How it works.html">
             <ul class="title">
                 <li>
                     <img src="../Resource/Images/LOGO/icons8-blood-85.png" alt="funding Logo">
@@ -28,9 +28,23 @@
         </a>
         <nav class="navbar">
             <ul>
-                <li><a href="category.html" target="_blank">Category</a></li>
-                <li><a href="How Does it work.html" target="_blank">How Does it work</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Category
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="Category\Animals.html">Animals</a>
+                            <a href="Category\Education.html">Education</a>
+                            <a href="Category\Family and kids.html">Family and kids</a>
+                            <a href="Category\Medical.html">Medical</a>
+                            <a href="Category\Historical place.html">Historical place</a>
+                            <a href="Category\Sports.html">Sports</a>
+                        </div>
+                </li>
+                <li><a href="How it works.html" target="_blank">How Does it work</a></li>
                 <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="About.html" target="_blank">About Us</a></li>
                 <li><a href="Contact.html" target="_blank">Contact us</a></li>
                 <li>
                     <a href="Login.html"> login</a>
@@ -43,21 +57,15 @@
     </div>
 
     <section class="login">
-        <form class="f-container" >
+        <form class="container" action="" method="GET">
             <div class="logintitle">
                 <h1>LOGIN</h1>
             </div>
-            <div class="name">
-                <label for="FullName">FullName:</label>
-                <input type="text" id="name" class="loginbox" placeholder="FullName">
-                <div class="error"></div>
-            </div>
-            <div class="name">
-                <label for="username">Email</label> <br> <br>
-                <input class="loginbox" id="email" type="text" placeholder="Username" autofocus>
-                <div class="error"></div>
-            </div>
-            <button>Submit</button>
+            <label for="username">Email</label> <br> <br>
+            <input class="loginbox" id="username" type="text" name="" placeholder="Username" required autofocus>
+            <label for="pass"> Password </label> <br> <br>
+            <input class="loginbox" id="pass" type="password" name="" placeholder="Password" required>
+            <input class="submitbutton" type="submit" value="Login">
         </form>
         <p class="logintext">Don't have an account? <a href="Register.html">Register</a> </p>
     </section>
@@ -68,7 +76,8 @@
                 <div class="col col-1">
                     <h3>E-fund</h3>
                     <p>
-                        E-fund is a way of raising money to finance project and businesses, It enables fundraisers to collect money from a large number of people via online plaforms
+                        E-fund is a way of raising money to finance project and businesses, It enables fundraisers to
+                        collect money from a large number of people via online plaforms
                     </p>
                 </div>
                 <div class="col col-2">
@@ -78,7 +87,8 @@
                         <li><a href="Privacy policy.html">Privacy policy</a></li>
                         <li>
                             <label>Contact Us</label><br>
-                            <img src="../Resource/Images/LOGO/icons8-telephone-48.png" alt="contact phone number" width="20">
+                            <img src="../Resource/Images/LOGO/icons8-telephone-48.png" alt="contact phone number"
+                                width="20">
                             <p style="margin: 0;"><a href="#">(+251)9-00-11-11-11</a></p>
                         </li>
                     </ul>
@@ -94,10 +104,12 @@
                     <h3>Follow Us</h3>
                     <ul>
                         <li class="social-links">
-                            <a href="#"><img src="../Resource/Images/LOGO/icons8-facebook-48.png" alt="FaceBook logo"></a>
+                            <a href="#"><img src="../Resource/Images/LOGO/icons8-facebook-48.png"
+                                    alt="FaceBook logo"></a>
                         </li>
                         <li class="social-links">
-                            <a href="#"><img src="../Resource/Images/LOGO/icons8-instagram-48.png" alt="instagram logo"></a>
+                            <a href="#"><img src="../Resource/Images/LOGO/icons8-instagram-48.png"
+                                    alt="instagram logo"></a>
                         </li>
                         <li class="social-links">
                             <a href="#"><img src="../Resource/Images/LOGO/icons8-twitter-48.png" alt="Twitter logo"></a>

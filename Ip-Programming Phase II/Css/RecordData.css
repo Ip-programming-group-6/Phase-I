@@ -1,26 +1,33 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+body,
+html {
     margin: 0;
     padding: 0;
-    font-family: "Poppins",sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-#header{
+
+#header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     background-color: #333;
     color: white;
-    margin-bottom: 50px;
+    margin: 0;
     padding: 0;
 }
-.empty{
-    background-color:#333;
+
+.empty {
+    background-color: #333;
     width: 100%;
     height: 300px;
     text-align: center;
 }
-.fundraiser{
+
+.fundraiser {
     text-align: center;
     color: black;
     padding-top: 120px;
@@ -28,38 +35,112 @@
     font-size: 2.3em;
 }
 
-.fundraiser h2{
+.fundraiser h2 {
     background-color: white;
     width: 35%;
-    padding:20px;
+    padding: 20px;
     margin-left: 30%;
     border-radius: 50%;
+    transition: .3s;
 }
-.fundraiser a{
+
+.fundraiser a {
     color: #333;
     text-decoration: none;
 }
-.title img{
+
+.fundraiser h2:hover {
+    background-color: rgb(146, 130, 130);
+    opacity: 1;
+    color: #ffffff;
+}
+
+.title img {
     min-width: 70px;
 }
-.title{
+
+.title {
     display: flex;
 }
-.navbar li,ul>li{
+
+.navbar li,
+ul>li {
     list-style-type: none;
 }
-.navbar li,.title,img{
+
+.navbar li,
+.title,
+img {
     padding: 0;
     margin: 0;
 }
-.navbar ul,.navbar li>ul{
-    margin:0;
+
+.navbar ul,
+.navbar li>ul {
+    margin: 0;
     padding: 0;
     display: flex;
 }
-.navbar li:hover{
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.navbar li:hover {
     background-color: #555;
 }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #777a7c;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #777a7c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .toggle {
     position: absolute;
     top: 1.5em;
