@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 body {
-  font-family: Arial;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
   background: #f1f1f1;
 }
 
@@ -14,7 +15,22 @@ body {
   text-align: center;
    background-image: url("C:\Users\user\Desktop\IP-Project-with-css\Resource\Images.jpg");
 }
-
+#header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+#header a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
@@ -49,9 +65,17 @@ body {
   display: table;
   clear: both;
 }
-
-
-
+.navbar{
+    font-size: 1.3em;
+}
+ a{
+    text-decoration: none;
+}
+.row2 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: 50%,50%;
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
@@ -489,5 +513,4 @@ a {
         width: 100%;
         padding: 10px;
     }
-
-
+}

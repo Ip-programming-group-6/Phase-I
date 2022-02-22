@@ -1,5 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f1f1f1;
+}
+
 #header {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -8,7 +20,11 @@
     margin: 0;
     padding: 0;
 }
-
+#header a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
 .empty {
     background-color: #333;
     width: 100%;
@@ -23,6 +39,7 @@
     color: #333;
     font-size: 2.3em;
 }
+
 .fundraiser h2 {
     background-color: white;
     width: 35%;
@@ -36,9 +53,10 @@
     color: #333;
     text-decoration: none;
 }
-.fundraiser h2:hover{
+
+.fundraiser h2:hover {
     background-color: rgb(146, 130, 130);
-    opacity:1;
+    opacity: 1;
     color: #ffffff;
 }
 
@@ -178,72 +196,75 @@ a {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 .column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
 }
 
 .about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
 }
 
 .container {
-  padding: 0 16px;
+    padding: 0 16px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .title {
-  color: grey;
+    color: grey;
 }
 
 .button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
 }
 
 .button:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 @media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+    .column {
+        width: 100%;
+        display: block;
+    }
 }
 
 .footer {
@@ -272,13 +293,13 @@ html {
 
 .col-1 {
     width: 15%;
-	color: white;
+    color: white;
 }
 
 .row-2 {
     text-align: center;
     width: 100%;
-	color: white;
+    color: white;
 }
 
 .col-2 {
@@ -351,14 +372,17 @@ html {
         height: 20px;
         font-size: 50%;
         border-radius: 10px;
-    } 
-    .toggle{
+    }
+
+    .toggle {
         display: flex;
     }
-    .navbar{
-        display: none; 
+
+    .navbar {
+        display: none;
         width: 100%;
     }
+
     .navbar li {
         text-align: center;
         margin-left: 20px;
@@ -369,12 +393,15 @@ html {
         flex-direction: column;
         padding: 2px;
     }
-    .navbar li a{
+
+    .navbar li a {
         padding: .5rem;
     }
-    .navbar.active{
+
+    .navbar.active {
         display: flex;
     }
+
     .paragraph {
         display: none;
     }
